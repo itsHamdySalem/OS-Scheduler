@@ -107,7 +107,6 @@ int main()
         printf("%d %d %d %d\n",p.process_id,p.arrival_time,p.runtime,p.priority);
         push(p);
         printf("\n");
-        processNumbers++;
     }
 
     // that's not the real logic the real logic will be like:
