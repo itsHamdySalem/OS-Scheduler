@@ -45,8 +45,8 @@ void heapify(int root)
 {
     int l = left(root), r = right(root);
     int mn = root;
-    if (l < curSize && compare(l, root) == -1) mn = l;
-    if (r < curSize && compare(r, root) == -1) mn = r;
+    if (l < curSize && compare(l, mn) == -1) mn = l;
+    if (r < curSize && compare(r, mn) == -1) mn = r;
 
     if (mn != root) {
         process_par tmp = heap[root];
